@@ -2,6 +2,7 @@ import React from 'react';
 import CarouselApp from '../components/carousel';
 import CardGroupApp from '../components/cardgroup';
 import { Container, Alert } from 'react-bootstrap';
+import paisaje from '../assets/paisaje.webp.jpg'; // Asegúrate de que la ruta sea correcta
 
 const Home: React.FC = () => {
   return (
@@ -14,6 +15,12 @@ const Home: React.FC = () => {
       </div>
 
       <CarouselApp />
+      <>url</>
+      <img
+        src={paisaje}
+        alt="Imagen local de bienvenida"
+        style={{ width: "100%", maxHeight: "400px", objectFit: "cover" }}
+      />
       <CardGroupApp />
 
       <Alert variant="success" className="mt-3">
